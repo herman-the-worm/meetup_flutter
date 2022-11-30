@@ -1,0 +1,39 @@
+name: meetup_flutter
+description: Meetup Flutter project
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  bloc: ^7.2.1 # business logic encapsulator and abstraction
+  flutter_bloc: ^7.3.3 # ability to use bloc objects inside UI as widgetS
+  formz: ^0.4.0-nullsafety.0 # library to use form validation via classes
+  freezed: ^1.1.0 # class generators
+  freezed_annotation: ^1.1.0 # class generator annotation
+  get_it: ^7.1.3 # service locator
+  injectable: ^1.4.1
+  dartz: ^0.10.0-nullsafety.2
+  auto_route: ^3.2.2 # simplifier for routing and generating route files
+  intl_phone_number_input: ^0.7.0+1 # widgets that helps search for phone number and verify it locally
+  keyboard_actions: ^3.4.1
+  logger: ^1.0.0
+  dio: ^4.0.0 # HTTP client
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  auto_route_generator: ^3.2.1 # generates route classes automatically
+  build_runner: ^2.1.5 # generates code
+  injectable_generator: ^1.4.1
+
+flutter:
+ uses-material-design: true
+
