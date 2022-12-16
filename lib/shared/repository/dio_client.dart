@@ -1,8 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 
 import '../shared.dart';
 
+@singleton
 class DioClient {
   static const String url = 'https://doctorcasa-node.herokuapp.com/api/';
   static BaseOptions opts = BaseOptions(

@@ -6,7 +6,7 @@ import 'package:meetup_flutter/shared/repository/dio_client.dart';
 
 import '../shared.dart';
 
-@Injectable()
+@singleton
 class FormRepository extends BaseRepository {
   FormRepository(DioClient dioClient) : super(dioClient);
 

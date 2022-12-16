@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'form_bloc.dart';
 
@@ -12,33 +12,7 @@ part of 'form_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FormEventTearOff {
-  const _$FormEventTearOff();
-
-  _FormPhoneNumberChanged formPhoneNumberChanged(
-      String phoneNumber, bool valid) {
-    return _FormPhoneNumberChanged(
-      phoneNumber,
-      valid,
-    );
-  }
-
-  _FormPasswordChanged formPasswordChanged(String password) {
-    return _FormPasswordChanged(
-      password,
-    );
-  }
-
-  _FormSubmitted formSubmitted() {
-    return const _FormSubmitted();
-  }
-}
-
-/// @nodoc
-const $FormEvent = _$FormEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$FormEvent {
@@ -52,9 +26,9 @@ mixin _$FormEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
-    TResult Function(String password)? formPasswordChanged,
-    TResult Function()? formSubmitted,
+    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String password)? formPasswordChanged,
+    TResult? Function()? formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,9 +49,9 @@ mixin _$FormEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
-    TResult Function(_FormPasswordChanged value)? formPasswordChanged,
-    TResult Function(_FormSubmitted value)? formSubmitted,
+    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
+    TResult? Function(_FormSubmitted value)? formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -93,48 +67,49 @@ mixin _$FormEvent {
 /// @nodoc
 abstract class $FormEventCopyWith<$Res> {
   factory $FormEventCopyWith(FormEvent value, $Res Function(FormEvent) then) =
-      _$FormEventCopyWithImpl<$Res>;
+      _$FormEventCopyWithImpl<$Res, FormEvent>;
 }
 
 /// @nodoc
-class _$FormEventCopyWithImpl<$Res> implements $FormEventCopyWith<$Res> {
+class _$FormEventCopyWithImpl<$Res, $Val extends FormEvent>
+    implements $FormEventCopyWith<$Res> {
   _$FormEventCopyWithImpl(this._value, this._then);
 
-  final FormEvent _value;
   // ignore: unused_field
-  final $Res Function(FormEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$FormPhoneNumberChangedCopyWith<$Res> {
-  factory _$FormPhoneNumberChangedCopyWith(_FormPhoneNumberChanged value,
-          $Res Function(_FormPhoneNumberChanged) then) =
-      __$FormPhoneNumberChangedCopyWithImpl<$Res>;
+abstract class _$$_FormPhoneNumberChangedCopyWith<$Res> {
+  factory _$$_FormPhoneNumberChangedCopyWith(_$_FormPhoneNumberChanged value,
+          $Res Function(_$_FormPhoneNumberChanged) then) =
+      __$$_FormPhoneNumberChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String phoneNumber, bool valid});
 }
 
 /// @nodoc
-class __$FormPhoneNumberChangedCopyWithImpl<$Res>
-    extends _$FormEventCopyWithImpl<$Res>
-    implements _$FormPhoneNumberChangedCopyWith<$Res> {
-  __$FormPhoneNumberChangedCopyWithImpl(_FormPhoneNumberChanged _value,
-      $Res Function(_FormPhoneNumberChanged) _then)
-      : super(_value, (v) => _then(v as _FormPhoneNumberChanged));
+class __$$_FormPhoneNumberChangedCopyWithImpl<$Res>
+    extends _$FormEventCopyWithImpl<$Res, _$_FormPhoneNumberChanged>
+    implements _$$_FormPhoneNumberChangedCopyWith<$Res> {
+  __$$_FormPhoneNumberChangedCopyWithImpl(_$_FormPhoneNumberChanged _value,
+      $Res Function(_$_FormPhoneNumberChanged) _then)
+      : super(_value, _then);
 
-  @override
-  _FormPhoneNumberChanged get _value => super._value as _FormPhoneNumberChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phoneNumber = freezed,
-    Object? valid = freezed,
+    Object? phoneNumber = null,
+    Object? valid = null,
   }) {
-    return _then(_FormPhoneNumberChanged(
-      phoneNumber == freezed
+    return _then(_$_FormPhoneNumberChanged(
+      null == phoneNumber
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
               as String,
-      valid == freezed
+      null == valid
           ? _value.valid
           : valid // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -161,22 +136,20 @@ class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FormPhoneNumberChanged &&
-            const DeepCollectionEquality()
-                .equals(other.phoneNumber, phoneNumber) &&
-            const DeepCollectionEquality().equals(other.valid, valid));
+            other is _$_FormPhoneNumberChanged &&
+            (identical(other.phoneNumber, phoneNumber) ||
+                other.phoneNumber == phoneNumber) &&
+            (identical(other.valid, valid) || other.valid == valid));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(phoneNumber),
-      const DeepCollectionEquality().hash(valid));
+  int get hashCode => Object.hash(runtimeType, phoneNumber, valid);
 
   @JsonKey(ignore: true)
   @override
-  _$FormPhoneNumberChangedCopyWith<_FormPhoneNumberChanged> get copyWith =>
-      __$FormPhoneNumberChangedCopyWithImpl<_FormPhoneNumberChanged>(
+  @pragma('vm:prefer-inline')
+  _$$_FormPhoneNumberChangedCopyWith<_$_FormPhoneNumberChanged> get copyWith =>
+      __$$_FormPhoneNumberChangedCopyWithImpl<_$_FormPhoneNumberChanged>(
           this, _$identity);
 
   @override
@@ -193,9 +166,9 @@ class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
-    TResult Function(String password)? formPasswordChanged,
-    TResult Function()? formSubmitted,
+    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String password)? formPasswordChanged,
+    TResult? Function()? formSubmitted,
   }) {
     return formPhoneNumberChanged?.call(phoneNumber, valid);
   }
@@ -228,9 +201,9 @@ class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
-    TResult Function(_FormPasswordChanged value)? formPasswordChanged,
-    TResult Function(_FormSubmitted value)? formSubmitted,
+    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
+    TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
     return formPhoneNumberChanged?.call(this);
   }
@@ -251,41 +224,40 @@ class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
 }
 
 abstract class _FormPhoneNumberChanged implements FormEvent {
-  const factory _FormPhoneNumberChanged(String phoneNumber, bool valid) =
-      _$_FormPhoneNumberChanged;
+  const factory _FormPhoneNumberChanged(
+      final String phoneNumber, final bool valid) = _$_FormPhoneNumberChanged;
 
   String get phoneNumber;
   bool get valid;
   @JsonKey(ignore: true)
-  _$FormPhoneNumberChangedCopyWith<_FormPhoneNumberChanged> get copyWith =>
+  _$$_FormPhoneNumberChangedCopyWith<_$_FormPhoneNumberChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FormPasswordChangedCopyWith<$Res> {
-  factory _$FormPasswordChangedCopyWith(_FormPasswordChanged value,
-          $Res Function(_FormPasswordChanged) then) =
-      __$FormPasswordChangedCopyWithImpl<$Res>;
+abstract class _$$_FormPasswordChangedCopyWith<$Res> {
+  factory _$$_FormPasswordChangedCopyWith(_$_FormPasswordChanged value,
+          $Res Function(_$_FormPasswordChanged) then) =
+      __$$_FormPasswordChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String password});
 }
 
 /// @nodoc
-class __$FormPasswordChangedCopyWithImpl<$Res>
-    extends _$FormEventCopyWithImpl<$Res>
-    implements _$FormPasswordChangedCopyWith<$Res> {
-  __$FormPasswordChangedCopyWithImpl(
-      _FormPasswordChanged _value, $Res Function(_FormPasswordChanged) _then)
-      : super(_value, (v) => _then(v as _FormPasswordChanged));
+class __$$_FormPasswordChangedCopyWithImpl<$Res>
+    extends _$FormEventCopyWithImpl<$Res, _$_FormPasswordChanged>
+    implements _$$_FormPasswordChangedCopyWith<$Res> {
+  __$$_FormPasswordChangedCopyWithImpl(_$_FormPasswordChanged _value,
+      $Res Function(_$_FormPasswordChanged) _then)
+      : super(_value, _then);
 
-  @override
-  _FormPasswordChanged get _value => super._value as _FormPasswordChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? password = freezed,
+    Object? password = null,
   }) {
-    return _then(_FormPasswordChanged(
-      password == freezed
+    return _then(_$_FormPasswordChanged(
+      null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
@@ -310,18 +282,19 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FormPasswordChanged &&
-            const DeepCollectionEquality().equals(other.password, password));
+            other is _$_FormPasswordChanged &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(password));
+  int get hashCode => Object.hash(runtimeType, password);
 
   @JsonKey(ignore: true)
   @override
-  _$FormPasswordChangedCopyWith<_FormPasswordChanged> get copyWith =>
-      __$FormPasswordChangedCopyWithImpl<_FormPasswordChanged>(
+  @pragma('vm:prefer-inline')
+  _$$_FormPasswordChangedCopyWith<_$_FormPasswordChanged> get copyWith =>
+      __$$_FormPasswordChangedCopyWithImpl<_$_FormPasswordChanged>(
           this, _$identity);
 
   @override
@@ -338,9 +311,9 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
-    TResult Function(String password)? formPasswordChanged,
-    TResult Function()? formSubmitted,
+    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String password)? formPasswordChanged,
+    TResult? Function()? formSubmitted,
   }) {
     return formPasswordChanged?.call(password);
   }
@@ -373,9 +346,9 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
-    TResult Function(_FormPasswordChanged value)? formPasswordChanged,
-    TResult Function(_FormSubmitted value)? formSubmitted,
+    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
+    TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
     return formPasswordChanged?.call(this);
   }
@@ -396,30 +369,29 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
 }
 
 abstract class _FormPasswordChanged implements FormEvent {
-  const factory _FormPasswordChanged(String password) = _$_FormPasswordChanged;
+  const factory _FormPasswordChanged(final String password) =
+      _$_FormPasswordChanged;
 
   String get password;
   @JsonKey(ignore: true)
-  _$FormPasswordChangedCopyWith<_FormPasswordChanged> get copyWith =>
+  _$$_FormPasswordChangedCopyWith<_$_FormPasswordChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$FormSubmittedCopyWith<$Res> {
-  factory _$FormSubmittedCopyWith(
-          _FormSubmitted value, $Res Function(_FormSubmitted) then) =
-      __$FormSubmittedCopyWithImpl<$Res>;
+abstract class _$$_FormSubmittedCopyWith<$Res> {
+  factory _$$_FormSubmittedCopyWith(
+          _$_FormSubmitted value, $Res Function(_$_FormSubmitted) then) =
+      __$$_FormSubmittedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$FormSubmittedCopyWithImpl<$Res> extends _$FormEventCopyWithImpl<$Res>
-    implements _$FormSubmittedCopyWith<$Res> {
-  __$FormSubmittedCopyWithImpl(
-      _FormSubmitted _value, $Res Function(_FormSubmitted) _then)
-      : super(_value, (v) => _then(v as _FormSubmitted));
-
-  @override
-  _FormSubmitted get _value => super._value as _FormSubmitted;
+class __$$_FormSubmittedCopyWithImpl<$Res>
+    extends _$FormEventCopyWithImpl<$Res, _$_FormSubmitted>
+    implements _$$_FormSubmittedCopyWith<$Res> {
+  __$$_FormSubmittedCopyWithImpl(
+      _$_FormSubmitted _value, $Res Function(_$_FormSubmitted) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -435,7 +407,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FormSubmitted);
+        (other.runtimeType == runtimeType && other is _$_FormSubmitted);
   }
 
   @override
@@ -455,9 +427,9 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
-    TResult Function(String password)? formPasswordChanged,
-    TResult Function()? formSubmitted,
+    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String password)? formPasswordChanged,
+    TResult? Function()? formSubmitted,
   }) {
     return formSubmitted?.call();
   }
@@ -490,9 +462,9 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
-    TResult Function(_FormPasswordChanged value)? formPasswordChanged,
-    TResult Function(_FormSubmitted value)? formSubmitted,
+    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
+    TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
     return formSubmitted?.call(this);
   }
@@ -517,27 +489,6 @@ abstract class _FormSubmitted implements FormEvent {
 }
 
 /// @nodoc
-class _$FormmStateTearOff {
-  const _$FormmStateTearOff();
-
-  _FormmState call(
-      {required FormzStatus status,
-      required PhoneNumberFieldModel phoneNumber,
-      required AuthFailure error,
-      required PasswordFieldModel password}) {
-    return _FormmState(
-      status: status,
-      phoneNumber: phoneNumber,
-      error: error,
-      password: password,
-    );
-  }
-}
-
-/// @nodoc
-const $FormmState = _$FormmStateTearOff();
-
-/// @nodoc
 mixin _$FormmState {
   FormzStatus get status => throw _privateConstructorUsedError;
   PhoneNumberFieldModel get phoneNumber => throw _privateConstructorUsedError;
@@ -553,7 +504,8 @@ mixin _$FormmState {
 abstract class $FormmStateCopyWith<$Res> {
   factory $FormmStateCopyWith(
           FormmState value, $Res Function(FormmState) then) =
-      _$FormmStateCopyWithImpl<$Res>;
+      _$FormmStateCopyWithImpl<$Res, FormmState>;
+  @useResult
   $Res call(
       {FormzStatus status,
       PhoneNumberFieldModel phoneNumber,
@@ -564,54 +516,60 @@ abstract class $FormmStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FormmStateCopyWithImpl<$Res> implements $FormmStateCopyWith<$Res> {
+class _$FormmStateCopyWithImpl<$Res, $Val extends FormmState>
+    implements $FormmStateCopyWith<$Res> {
   _$FormmStateCopyWithImpl(this._value, this._then);
 
-  final FormmState _value;
   // ignore: unused_field
-  final $Res Function(FormmState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? phoneNumber = freezed,
-    Object? error = freezed,
-    Object? password = freezed,
+    Object? status = null,
+    Object? phoneNumber = null,
+    Object? error = null,
+    Object? password = null,
   }) {
     return _then(_value.copyWith(
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as FormzStatus,
-      phoneNumber: phoneNumber == freezed
+      phoneNumber: null == phoneNumber
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
               as PhoneNumberFieldModel,
-      error: error == freezed
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthFailure,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as PasswordFieldModel,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $AuthFailureCopyWith<$Res> get error {
     return $AuthFailureCopyWith<$Res>(_value.error, (value) {
-      return _then(_value.copyWith(error: value));
+      return _then(_value.copyWith(error: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$FormmStateCopyWith<$Res> implements $FormmStateCopyWith<$Res> {
-  factory _$FormmStateCopyWith(
-          _FormmState value, $Res Function(_FormmState) then) =
-      __$FormmStateCopyWithImpl<$Res>;
+abstract class _$$_FormmStateCopyWith<$Res>
+    implements $FormmStateCopyWith<$Res> {
+  factory _$$_FormmStateCopyWith(
+          _$_FormmState value, $Res Function(_$_FormmState) then) =
+      __$$_FormmStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {FormzStatus status,
       PhoneNumberFieldModel phoneNumber,
@@ -623,36 +581,35 @@ abstract class _$FormmStateCopyWith<$Res> implements $FormmStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$FormmStateCopyWithImpl<$Res> extends _$FormmStateCopyWithImpl<$Res>
-    implements _$FormmStateCopyWith<$Res> {
-  __$FormmStateCopyWithImpl(
-      _FormmState _value, $Res Function(_FormmState) _then)
-      : super(_value, (v) => _then(v as _FormmState));
+class __$$_FormmStateCopyWithImpl<$Res>
+    extends _$FormmStateCopyWithImpl<$Res, _$_FormmState>
+    implements _$$_FormmStateCopyWith<$Res> {
+  __$$_FormmStateCopyWithImpl(
+      _$_FormmState _value, $Res Function(_$_FormmState) _then)
+      : super(_value, _then);
 
-  @override
-  _FormmState get _value => super._value as _FormmState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? status = freezed,
-    Object? phoneNumber = freezed,
-    Object? error = freezed,
-    Object? password = freezed,
+    Object? status = null,
+    Object? phoneNumber = null,
+    Object? error = null,
+    Object? password = null,
   }) {
-    return _then(_FormmState(
-      status: status == freezed
+    return _then(_$_FormmState(
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as FormzStatus,
-      phoneNumber: phoneNumber == freezed
+      phoneNumber: null == phoneNumber
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
               as PhoneNumberFieldModel,
-      error: error == freezed
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthFailure,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as PasswordFieldModel,
@@ -687,34 +644,32 @@ class _$_FormmState implements _FormmState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FormmState &&
-            const DeepCollectionEquality().equals(other.status, status) &&
-            const DeepCollectionEquality()
-                .equals(other.phoneNumber, phoneNumber) &&
-            const DeepCollectionEquality().equals(other.error, error) &&
-            const DeepCollectionEquality().equals(other.password, password));
+            other is _$_FormmState &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.phoneNumber, phoneNumber) ||
+                other.phoneNumber == phoneNumber) &&
+            (identical(other.error, error) || other.error == error) &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(status),
-      const DeepCollectionEquality().hash(phoneNumber),
-      const DeepCollectionEquality().hash(error),
-      const DeepCollectionEquality().hash(password));
+  int get hashCode =>
+      Object.hash(runtimeType, status, phoneNumber, error, password);
 
   @JsonKey(ignore: true)
   @override
-  _$FormmStateCopyWith<_FormmState> get copyWith =>
-      __$FormmStateCopyWithImpl<_FormmState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_FormmStateCopyWith<_$_FormmState> get copyWith =>
+      __$$_FormmStateCopyWithImpl<_$_FormmState>(this, _$identity);
 }
 
 abstract class _FormmState implements FormmState {
   const factory _FormmState(
-      {required FormzStatus status,
-      required PhoneNumberFieldModel phoneNumber,
-      required AuthFailure error,
-      required PasswordFieldModel password}) = _$_FormmState;
+      {required final FormzStatus status,
+      required final PhoneNumberFieldModel phoneNumber,
+      required final AuthFailure error,
+      required final PasswordFieldModel password}) = _$_FormmState;
 
   @override
   FormzStatus get status;
@@ -726,6 +681,6 @@ abstract class _FormmState implements FormmState {
   PasswordFieldModel get password;
   @override
   @JsonKey(ignore: true)
-  _$FormmStateCopyWith<_FormmState> get copyWith =>
+  _$$_FormmStateCopyWith<_$_FormmState> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,75 +1,144 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../shared.dart';
 
-ThemeData themeDataWeb = ThemeData(
-  fontFamily: 'Open Sans',
-  primaryColor: kWebPrimaryColor,
-  scaffoldBackgroundColor: kWebScaffoldMainBackgroundColor,
-  appBarTheme: const AppBarTheme(
-    centerTitle: true,
-    titleTextStyle: TextStyle(color: kBlack),
-    backgroundColor: kAppBarColor,
-    elevation: 0,
-  ),
-  textTheme: const TextTheme(
-    headline1: TextStyle(
-      fontSize: 30,
-      color: kPrimaryColor,
-      fontWeight: FontWeight.bold,
-    ),
-    headline2: TextStyle(
-      fontSize: 24,
-      color: Colors.white,
-    ),
-    headline3: TextStyle(
-      fontSize: 20,
-      fontWeight: FontWeight.w500,
-      color: Colors.white,
-    ),
-    headline4: TextStyle(
-      fontSize: 18,
-      fontWeight: FontWeight.bold,
-      color: kPrimaryColor,
-    ),
-    headline5: TextStyle(
-      fontSize: 18,
-      fontWeight: FontWeight.w500,
-      color: Colors.black,
-    ),
-    // Title for text fields
-    headline6: TextStyle(
-      color: Colors.white,
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-    ),
-    bodyText1: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: Colors.grey,
-    ),
-    bodyText2: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
-      color: Colors.black,
-    ),
-    button: TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.w500,
-      color: kPrimaryColor,
-    ),
-    subtitle1: TextStyle(
-      fontWeight: FontWeight.w400,
-      color: Colors.black26,
-      fontSize: 14,
-    ),
-    subtitle2: TextStyle(
-      fontWeight: FontWeight.w400,
-      color: Colors.black26,
-      fontSize: 12,
-    ),
-  ),
-);
+ThemeData themeData = kIsWeb
+    ? ThemeData(
+        fontFamily: 'Open Sans',
+        primaryColor: kWebPrimaryColor,
+        scaffoldBackgroundColor: kWebScaffoldMainBackgroundColor,
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          titleTextStyle: TextStyle(color: kBlack),
+          backgroundColor: kAppBarColor,
+          elevation: 0,
+        ),
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+            fontSize: 30,
+            color: kPrimaryColor,
+            fontWeight: FontWeight.bold,
+          ),
+          headline2: TextStyle(
+            fontSize: 24,
+            color: Colors.white,
+          ),
+          headline3: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
+          headline4: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: kPrimaryColor,
+          ),
+          headline5: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
+          // Title for text fields
+          headline6: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+          ),
+          bodyText1: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+            color: Colors.grey,
+          ),
+          bodyText2: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+            color: Colors.black,
+          ),
+          button: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+            color: kPrimaryColor,
+          ),
+          subtitle1: TextStyle(
+            fontWeight: FontWeight.w400,
+            color: Colors.black26,
+            fontSize: 14,
+          ),
+          subtitle2: TextStyle(
+            fontWeight: FontWeight.w400,
+            color: Colors.black26,
+            fontSize: 12,
+          ),
+        ),
+      )
+    : ThemeData(
+        fontFamily: 'Open Sans',
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: kScaffoldBackgroundColor,
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          titleTextStyle: TextStyle(color: Colors.white),
+          backgroundColor: kAppBarColor,
+          elevation: 0,
+        ),
+        textTheme: const TextTheme(
+            headline1: TextStyle(
+              fontSize: 30,
+              color: kPrimaryColor,
+              fontWeight: FontWeight.bold,
+            ),
+            headline2: TextStyle(
+              fontSize: 24,
+              color: Colors.white,
+            ),
+            headline3: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+            ),
+            headline4: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: kPrimaryColor,
+            ),
+            headline5: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+            // Title for text fields
+            headline6: TextStyle(
+              color: Colors.white,
+              fontSize: 14,
+              fontWeight: FontWeight.w400,
+            ),
+            bodyText1: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
+              color: Colors.grey,
+            ),
+            bodyText2: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
+              color: Colors.black,
+            ),
+            button: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+              color: kPrimaryColor,
+            ),
+            subtitle1: TextStyle(
+              fontWeight: FontWeight.w400,
+              color: Colors.black26,
+              fontSize: 14,
+            ),
+            subtitle2: TextStyle(
+              fontWeight: FontWeight.w400,
+              color: Colors.black26,
+              fontSize: 12,
+            )),
+      );
 
 ButtonStyle webButtonStylePrimary = ButtonStyle(
   shape: MaterialStateProperty.all(webBorderPrimary),

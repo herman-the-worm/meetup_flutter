@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_failure.dart';
 
@@ -12,47 +12,7 @@ part of 'auth_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthFailureTearOff {
-  const _$AuthFailureTearOff();
-
-  _ServerError serverError() {
-    return const _ServerError();
-  }
-
-  _InvalidEmailAndPasswordCombination invalidEmailAndPasswordCombination() {
-    return const _InvalidEmailAndPasswordCombination();
-  }
-
-  _Unauthorized unauthorized() {
-    return const _Unauthorized();
-  }
-
-  _NotFound notfound() {
-    return const _NotFound();
-  }
-
-  _Duplicate duplicate() {
-    return const _Duplicate();
-  }
-
-  _TooManyRequests tooManyRequests() {
-    return const _TooManyRequests();
-  }
-
-  _PendingSetUpProfile pendingSetUpProfile() {
-    return const _PendingSetUpProfile();
-  }
-
-  _Unverified unverified() {
-    return const _Unverified();
-  }
-}
-
-/// @nodoc
-const $AuthFailure = _$AuthFailureTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthFailure {
@@ -70,14 +30,14 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -108,15 +68,15 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -139,34 +99,34 @@ mixin _$AuthFailure {
 abstract class $AuthFailureCopyWith<$Res> {
   factory $AuthFailureCopyWith(
           AuthFailure value, $Res Function(AuthFailure) then) =
-      _$AuthFailureCopyWithImpl<$Res>;
+      _$AuthFailureCopyWithImpl<$Res, AuthFailure>;
 }
 
 /// @nodoc
-class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
+class _$AuthFailureCopyWithImpl<$Res, $Val extends AuthFailure>
+    implements $AuthFailureCopyWith<$Res> {
   _$AuthFailureCopyWithImpl(this._value, this._then);
 
-  final AuthFailure _value;
   // ignore: unused_field
-  final $Res Function(AuthFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$ServerErrorCopyWith<$Res> {
-  factory _$ServerErrorCopyWith(
-          _ServerError value, $Res Function(_ServerError) then) =
-      __$ServerErrorCopyWithImpl<$Res>;
+abstract class _$$_ServerErrorCopyWith<$Res> {
+  factory _$$_ServerErrorCopyWith(
+          _$_ServerError value, $Res Function(_$_ServerError) then) =
+      __$$_ServerErrorCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$ServerErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$ServerErrorCopyWith<$Res> {
-  __$ServerErrorCopyWithImpl(
-      _ServerError _value, $Res Function(_ServerError) _then)
-      : super(_value, (v) => _then(v as _ServerError));
-
-  @override
-  _ServerError get _value => super._value as _ServerError;
+class __$$_ServerErrorCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_ServerError>
+    implements _$$_ServerErrorCopyWith<$Res> {
+  __$$_ServerErrorCopyWithImpl(
+      _$_ServerError _value, $Res Function(_$_ServerError) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -182,7 +142,7 @@ class _$_ServerError implements _ServerError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _ServerError);
+        (other.runtimeType == runtimeType && other is _$_ServerError);
   }
 
   @override
@@ -206,14 +166,14 @@ class _$_ServerError implements _ServerError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return serverError?.call();
   }
@@ -256,15 +216,15 @@ class _$_ServerError implements _ServerError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return serverError?.call(this);
   }
@@ -295,25 +255,22 @@ abstract class _ServerError implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  factory _$InvalidEmailAndPasswordCombinationCopyWith(
-          _InvalidEmailAndPasswordCombination value,
-          $Res Function(_InvalidEmailAndPasswordCombination) then) =
-      __$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
+abstract class _$$_InvalidEmailAndPasswordCombinationCopyWith<$Res> {
+  factory _$$_InvalidEmailAndPasswordCombinationCopyWith(
+          _$_InvalidEmailAndPasswordCombination value,
+          $Res Function(_$_InvalidEmailAndPasswordCombination) then) =
+      __$$_InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  __$InvalidEmailAndPasswordCombinationCopyWithImpl(
-      _InvalidEmailAndPasswordCombination _value,
-      $Res Function(_InvalidEmailAndPasswordCombination) _then)
-      : super(_value, (v) => _then(v as _InvalidEmailAndPasswordCombination));
-
-  @override
-  _InvalidEmailAndPasswordCombination get _value =>
-      super._value as _InvalidEmailAndPasswordCombination;
+class __$$_InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res,
+        _$_InvalidEmailAndPasswordCombination>
+    implements _$$_InvalidEmailAndPasswordCombinationCopyWith<$Res> {
+  __$$_InvalidEmailAndPasswordCombinationCopyWithImpl(
+      _$_InvalidEmailAndPasswordCombination _value,
+      $Res Function(_$_InvalidEmailAndPasswordCombination) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -331,7 +288,7 @@ class _$_InvalidEmailAndPasswordCombination
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InvalidEmailAndPasswordCombination);
+            other is _$_InvalidEmailAndPasswordCombination);
   }
 
   @override
@@ -355,14 +312,14 @@ class _$_InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return invalidEmailAndPasswordCombination?.call();
   }
@@ -405,15 +362,15 @@ class _$_InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return invalidEmailAndPasswordCombination?.call(this);
   }
@@ -445,21 +402,19 @@ abstract class _InvalidEmailAndPasswordCombination implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$UnauthorizedCopyWith<$Res> {
-  factory _$UnauthorizedCopyWith(
-          _Unauthorized value, $Res Function(_Unauthorized) then) =
-      __$UnauthorizedCopyWithImpl<$Res>;
+abstract class _$$_UnauthorizedCopyWith<$Res> {
+  factory _$$_UnauthorizedCopyWith(
+          _$_Unauthorized value, $Res Function(_$_Unauthorized) then) =
+      __$$_UnauthorizedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$UnauthorizedCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$UnauthorizedCopyWith<$Res> {
-  __$UnauthorizedCopyWithImpl(
-      _Unauthorized _value, $Res Function(_Unauthorized) _then)
-      : super(_value, (v) => _then(v as _Unauthorized));
-
-  @override
-  _Unauthorized get _value => super._value as _Unauthorized;
+class __$$_UnauthorizedCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_Unauthorized>
+    implements _$$_UnauthorizedCopyWith<$Res> {
+  __$$_UnauthorizedCopyWithImpl(
+      _$_Unauthorized _value, $Res Function(_$_Unauthorized) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -475,7 +430,7 @@ class _$_Unauthorized implements _Unauthorized {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Unauthorized);
+        (other.runtimeType == runtimeType && other is _$_Unauthorized);
   }
 
   @override
@@ -499,14 +454,14 @@ class _$_Unauthorized implements _Unauthorized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return unauthorized?.call();
   }
@@ -549,15 +504,15 @@ class _$_Unauthorized implements _Unauthorized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return unauthorized?.call(this);
   }
@@ -588,19 +543,19 @@ abstract class _Unauthorized implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$NotFoundCopyWith<$Res> {
-  factory _$NotFoundCopyWith(_NotFound value, $Res Function(_NotFound) then) =
-      __$NotFoundCopyWithImpl<$Res>;
+abstract class _$$_NotFoundCopyWith<$Res> {
+  factory _$$_NotFoundCopyWith(
+          _$_NotFound value, $Res Function(_$_NotFound) then) =
+      __$$_NotFoundCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$NotFoundCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$NotFoundCopyWith<$Res> {
-  __$NotFoundCopyWithImpl(_NotFound _value, $Res Function(_NotFound) _then)
-      : super(_value, (v) => _then(v as _NotFound));
-
-  @override
-  _NotFound get _value => super._value as _NotFound;
+class __$$_NotFoundCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_NotFound>
+    implements _$$_NotFoundCopyWith<$Res> {
+  __$$_NotFoundCopyWithImpl(
+      _$_NotFound _value, $Res Function(_$_NotFound) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -616,7 +571,7 @@ class _$_NotFound implements _NotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _NotFound);
+        (other.runtimeType == runtimeType && other is _$_NotFound);
   }
 
   @override
@@ -640,14 +595,14 @@ class _$_NotFound implements _NotFound {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return notfound?.call();
   }
@@ -690,15 +645,15 @@ class _$_NotFound implements _NotFound {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return notfound?.call(this);
   }
@@ -729,20 +684,19 @@ abstract class _NotFound implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$DuplicateCopyWith<$Res> {
-  factory _$DuplicateCopyWith(
-          _Duplicate value, $Res Function(_Duplicate) then) =
-      __$DuplicateCopyWithImpl<$Res>;
+abstract class _$$_DuplicateCopyWith<$Res> {
+  factory _$$_DuplicateCopyWith(
+          _$_Duplicate value, $Res Function(_$_Duplicate) then) =
+      __$$_DuplicateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$DuplicateCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$DuplicateCopyWith<$Res> {
-  __$DuplicateCopyWithImpl(_Duplicate _value, $Res Function(_Duplicate) _then)
-      : super(_value, (v) => _then(v as _Duplicate));
-
-  @override
-  _Duplicate get _value => super._value as _Duplicate;
+class __$$_DuplicateCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_Duplicate>
+    implements _$$_DuplicateCopyWith<$Res> {
+  __$$_DuplicateCopyWithImpl(
+      _$_Duplicate _value, $Res Function(_$_Duplicate) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -758,7 +712,7 @@ class _$_Duplicate implements _Duplicate {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Duplicate);
+        (other.runtimeType == runtimeType && other is _$_Duplicate);
   }
 
   @override
@@ -782,14 +736,14 @@ class _$_Duplicate implements _Duplicate {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return duplicate?.call();
   }
@@ -832,15 +786,15 @@ class _$_Duplicate implements _Duplicate {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return duplicate?.call(this);
   }
@@ -871,22 +825,19 @@ abstract class _Duplicate implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$TooManyRequestsCopyWith<$Res> {
-  factory _$TooManyRequestsCopyWith(
-          _TooManyRequests value, $Res Function(_TooManyRequests) then) =
-      __$TooManyRequestsCopyWithImpl<$Res>;
+abstract class _$$_TooManyRequestsCopyWith<$Res> {
+  factory _$$_TooManyRequestsCopyWith(
+          _$_TooManyRequests value, $Res Function(_$_TooManyRequests) then) =
+      __$$_TooManyRequestsCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$TooManyRequestsCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$TooManyRequestsCopyWith<$Res> {
-  __$TooManyRequestsCopyWithImpl(
-      _TooManyRequests _value, $Res Function(_TooManyRequests) _then)
-      : super(_value, (v) => _then(v as _TooManyRequests));
-
-  @override
-  _TooManyRequests get _value => super._value as _TooManyRequests;
+class __$$_TooManyRequestsCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_TooManyRequests>
+    implements _$$_TooManyRequestsCopyWith<$Res> {
+  __$$_TooManyRequestsCopyWithImpl(
+      _$_TooManyRequests _value, $Res Function(_$_TooManyRequests) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -902,7 +853,7 @@ class _$_TooManyRequests implements _TooManyRequests {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _TooManyRequests);
+        (other.runtimeType == runtimeType && other is _$_TooManyRequests);
   }
 
   @override
@@ -926,14 +877,14 @@ class _$_TooManyRequests implements _TooManyRequests {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return tooManyRequests?.call();
   }
@@ -976,15 +927,15 @@ class _$_TooManyRequests implements _TooManyRequests {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return tooManyRequests?.call(this);
   }
@@ -1015,22 +966,19 @@ abstract class _TooManyRequests implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$PendingSetUpProfileCopyWith<$Res> {
-  factory _$PendingSetUpProfileCopyWith(_PendingSetUpProfile value,
-          $Res Function(_PendingSetUpProfile) then) =
-      __$PendingSetUpProfileCopyWithImpl<$Res>;
+abstract class _$$_PendingSetUpProfileCopyWith<$Res> {
+  factory _$$_PendingSetUpProfileCopyWith(_$_PendingSetUpProfile value,
+          $Res Function(_$_PendingSetUpProfile) then) =
+      __$$_PendingSetUpProfileCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PendingSetUpProfileCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$PendingSetUpProfileCopyWith<$Res> {
-  __$PendingSetUpProfileCopyWithImpl(
-      _PendingSetUpProfile _value, $Res Function(_PendingSetUpProfile) _then)
-      : super(_value, (v) => _then(v as _PendingSetUpProfile));
-
-  @override
-  _PendingSetUpProfile get _value => super._value as _PendingSetUpProfile;
+class __$$_PendingSetUpProfileCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_PendingSetUpProfile>
+    implements _$$_PendingSetUpProfileCopyWith<$Res> {
+  __$$_PendingSetUpProfileCopyWithImpl(_$_PendingSetUpProfile _value,
+      $Res Function(_$_PendingSetUpProfile) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -1046,7 +994,7 @@ class _$_PendingSetUpProfile implements _PendingSetUpProfile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _PendingSetUpProfile);
+        (other.runtimeType == runtimeType && other is _$_PendingSetUpProfile);
   }
 
   @override
@@ -1070,14 +1018,14 @@ class _$_PendingSetUpProfile implements _PendingSetUpProfile {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return pendingSetUpProfile?.call();
   }
@@ -1120,15 +1068,15 @@ class _$_PendingSetUpProfile implements _PendingSetUpProfile {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return pendingSetUpProfile?.call(this);
   }
@@ -1159,21 +1107,19 @@ abstract class _PendingSetUpProfile implements AuthFailure {
 }
 
 /// @nodoc
-abstract class _$UnverifiedCopyWith<$Res> {
-  factory _$UnverifiedCopyWith(
-          _Unverified value, $Res Function(_Unverified) then) =
-      __$UnverifiedCopyWithImpl<$Res>;
+abstract class _$$_UnverifiedCopyWith<$Res> {
+  factory _$$_UnverifiedCopyWith(
+          _$_Unverified value, $Res Function(_$_Unverified) then) =
+      __$$_UnverifiedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$UnverifiedCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$UnverifiedCopyWith<$Res> {
-  __$UnverifiedCopyWithImpl(
-      _Unverified _value, $Res Function(_Unverified) _then)
-      : super(_value, (v) => _then(v as _Unverified));
-
-  @override
-  _Unverified get _value => super._value as _Unverified;
+class __$$_UnverifiedCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$_Unverified>
+    implements _$$_UnverifiedCopyWith<$Res> {
+  __$$_UnverifiedCopyWithImpl(
+      _$_Unverified _value, $Res Function(_$_Unverified) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -1189,7 +1135,7 @@ class _$_Unverified implements _Unverified {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Unverified);
+        (other.runtimeType == runtimeType && other is _$_Unverified);
   }
 
   @override
@@ -1213,14 +1159,14 @@ class _$_Unverified implements _Unverified {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function()? invalidEmailAndPasswordCombination,
-    TResult Function()? unauthorized,
-    TResult Function()? notfound,
-    TResult Function()? duplicate,
-    TResult Function()? tooManyRequests,
-    TResult Function()? pendingSetUpProfile,
-    TResult Function()? unverified,
+    TResult? Function()? serverError,
+    TResult? Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? unauthorized,
+    TResult? Function()? notfound,
+    TResult? Function()? duplicate,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? pendingSetUpProfile,
+    TResult? Function()? unverified,
   }) {
     return unverified?.call();
   }
@@ -1263,15 +1209,15 @@ class _$_Unverified implements _Unverified {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_InvalidEmailAndPasswordCombination value)?
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
-    TResult Function(_Unauthorized value)? unauthorized,
-    TResult Function(_NotFound value)? notfound,
-    TResult Function(_Duplicate value)? duplicate,
-    TResult Function(_TooManyRequests value)? tooManyRequests,
-    TResult Function(_PendingSetUpProfile value)? pendingSetUpProfile,
-    TResult Function(_Unverified value)? unverified,
+    TResult? Function(_Unauthorized value)? unauthorized,
+    TResult? Function(_NotFound value)? notfound,
+    TResult? Function(_Duplicate value)? duplicate,
+    TResult? Function(_TooManyRequests value)? tooManyRequests,
+    TResult? Function(_PendingSetUpProfile value)? pendingSetUpProfile,
+    TResult? Function(_Unverified value)? unverified,
   }) {
     return unverified?.call(this);
   }

@@ -1,22 +1,18 @@
-import 'package:auto_route/annotations.dart';
-import 'package:auto_route/auto_route.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../components/components.dart';
 
-
-@MaterialAutoRouter(
-  preferRelativeImports: false,
-  replaceInRouteName: 'Page,Route',
-  routes: <AutoRoute>[
-    AutoRoute(
-      page: HomePage,
+// GoRouter configuration
+final globalRouter = GoRouter(
+  debugLogDiagnostics: true,
+  routes: [
+    GoRoute(
       path: '/',
-      initial: true,
+      builder: (context, state) => const HomePage(),
     ),
-    AutoRoute(
-      page: FormPage,
+    GoRoute(
       path: '/intro',
+      builder: (context, state) => const FormPage(),
     ),
   ],
-)
-class $RootRouter {}
+);

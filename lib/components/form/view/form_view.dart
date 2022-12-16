@@ -1,11 +1,10 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meetup_flutter/shared/repository/base_repository.dart';
 import 'package:meetup_flutter/shared/repository/form_repository.dart';
-import 'package:meetup_flutter/shared/shared.dart';
 
+import '../../../shared/bloc/form_bloc/form_bloc.dart';
+import '../../../shared/repository/dio_client.dart';
 import '../form.dart';
 
 class FormPage extends StatelessWidget {
@@ -15,8 +14,7 @@ class FormPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     return BlocProvider(
-      create: (context) =>
-          FormBloc(FormRepository(context.read<BaseRepository>().dioClient)),
+      create: (context) => FormBloc(FormRepository(DioClient())),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
@@ -27,22 +25,26 @@ class FormPage extends StatelessWidget {
                 Icons.arrow_back_ios_rounded,
                 color: Colors.white,
               ),
-              onPressed: () => context.router.navigateBack(),
+              onPressed: () => Navigator.of(context).pop(),
             )),
         body: Padding(
           padding: const EdgeInsets.all(30.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const FormPhoneNumberFieldWidget(
+            children: const [
+              FormPhoneNumberFieldWidget(
                 key: ValueKey('form-phone-number-field-widget'),
               ),
-              SizedBox(height: kIsWeb ? 20 : height * 0.025),
-              const FormPasswordFieldWidget(
-                key: ValueKey('form-password-field-widget'),
-              ),
-              SizedBox(height: kIsWeb ? 20 : height * 0.025),
-              const FormSubmitButtonWidget(key: ValueKey('form-button-submit')),
+              // SizedBox(height: kIsWeb ? 20 : height * 0.025),
+              // const Flexible(
+              //   child: FormPasswordFieldWidget(
+              //     key: ValueKey('form-password-field-widget'),
+              //   ),
+              // ),
+              // SizedBox(height: kIsWeb ? 20 : height * 0.025),
+              // const Flexible(
+              //     child: FormSubmitButtonWidget(
+              //         key: ValueKey('form-button-submit'))),
             ],
           ),
         ),
