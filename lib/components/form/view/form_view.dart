@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meetup_flutter/shared/repository/form_repository.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../shared/bloc/form_bloc/form_bloc.dart';
-import '../../../shared/repository/dio_client.dart';
+import '../../../shared/shared.dart';
 import '../form.dart';
 
 class FormPage extends StatelessWidget {
@@ -14,7 +14,7 @@ class FormPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     return BlocProvider(
-      create: (context) => FormBloc(FormRepository(DioClient())),
+      create: (context) => getIt.get<FormBloc>(),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
@@ -25,7 +25,7 @@ class FormPage extends StatelessWidget {
                 Icons.arrow_back_ios_rounded,
                 color: Colors.white,
               ),
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () => context.go('/'),
             )),
         body: Padding(
           padding: const EdgeInsets.all(30.0),
@@ -35,16 +35,16 @@ class FormPage extends StatelessWidget {
               FormPhoneNumberFieldWidget(
                 key: ValueKey('form-phone-number-field-widget'),
               ),
-              // SizedBox(height: kIsWeb ? 20 : height * 0.025),
-              // const Flexible(
-              //   child: FormPasswordFieldWidget(
-              //     key: ValueKey('form-password-field-widget'),
-              //   ),
-              // ),
-              // SizedBox(height: kIsWeb ? 20 : height * 0.025),
-              // const Flexible(
-              //     child: FormSubmitButtonWidget(
-              //         key: ValueKey('form-button-submit'))),
+              SizedBox(height: 20),
+              Flexible(
+                child: FormPasswordFieldWidget(
+                  key: ValueKey('form-password-field-widget'),
+                ),
+              ),
+              SizedBox(height: 20),
+              Flexible(
+                  child: FormSubmitButtonWidget(
+                      key: ValueKey('form-button-submit'))),
             ],
           ),
         ),
