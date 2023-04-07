@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../shared.dart';
 
-class ButtonWidget extends StatelessWidget {
+class ButtonWidget extends StatefulWidget {
   final void Function()? onPressed;
   final String? buttonText;
   final ButtonStyle? btnStyle;
@@ -24,20 +24,26 @@ class ButtonWidget extends StatelessWidget {
       : super(key: key);
 
   @override
+  State<ButtonWidget> createState() => _ButtonWidgetState();
+}
+
+class _ButtonWidgetState extends State<ButtonWidget> {
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height:
-          height ?? (kIsWeb ? 46 : MediaQuery.of(context).size.height * 0.06),
-      width: width ?? MediaQuery.of(context).size.width,
+      height: widget.height ??
+          (kIsWeb ? 46 : MediaQuery.of(context).size.height * 0.06),
+      width: widget.width ?? MediaQuery.of(context).size.width,
       child: ElevatedButton(
-        onPressed: onPressed,
-        child: child ??
+        onPressed: widget.onPressed,
+        child: widget.child ??
             Text(
-              kIsWeb ? buttonText! : buttonText!.toUpperCase(),
+              kIsWeb ? widget.buttonText! : widget.buttonText!.toUpperCase(),
               overflow: TextOverflow.visible,
-              style: textStyle ?? Theme.of(context).textTheme.buttonTextStyle,
+              style: widget.textStyle ??
+                  Theme.of(context).textTheme.buttonTextStyle,
             ),
-        style: btnStyle ?? buttonStylePrimary,
+        style: widget.btnStyle ?? buttonStylePrimary,
       ),
     );
   }

@@ -18,22 +18,21 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$FormEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String phoneNumber, bool valid)
-        formPhoneNumberChanged,
+    required TResult Function(String username) formUsernameChanged,
     required TResult Function(String password) formPasswordChanged,
     required TResult Function() formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String username)? formUsernameChanged,
     TResult? Function(String password)? formPasswordChanged,
     TResult? Function()? formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult Function(String username)? formUsernameChanged,
     TResult Function(String password)? formPasswordChanged,
     TResult Function()? formSubmitted,
     required TResult orElse(),
@@ -41,22 +40,21 @@ mixin _$FormEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_FormPhoneNumberChanged value)
-        formPhoneNumberChanged,
+    required TResult Function(_FormUsernameChanged value) formUsernameChanged,
     required TResult Function(_FormPasswordChanged value) formPasswordChanged,
     required TResult Function(_FormSubmitted value) formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult? Function(_FormSubmitted value)? formSubmitted,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult Function(_FormSubmitted value)? formSubmitted,
     required TResult orElse(),
@@ -82,107 +80,98 @@ class _$FormEventCopyWithImpl<$Res, $Val extends FormEvent>
 }
 
 /// @nodoc
-abstract class _$$_FormPhoneNumberChangedCopyWith<$Res> {
-  factory _$$_FormPhoneNumberChangedCopyWith(_$_FormPhoneNumberChanged value,
-          $Res Function(_$_FormPhoneNumberChanged) then) =
-      __$$_FormPhoneNumberChangedCopyWithImpl<$Res>;
+abstract class _$$_FormUsernameChangedCopyWith<$Res> {
+  factory _$$_FormUsernameChangedCopyWith(_$_FormUsernameChanged value,
+          $Res Function(_$_FormUsernameChanged) then) =
+      __$$_FormUsernameChangedCopyWithImpl<$Res>;
   @useResult
-  $Res call({String phoneNumber, bool valid});
+  $Res call({String username});
 }
 
 /// @nodoc
-class __$$_FormPhoneNumberChangedCopyWithImpl<$Res>
-    extends _$FormEventCopyWithImpl<$Res, _$_FormPhoneNumberChanged>
-    implements _$$_FormPhoneNumberChangedCopyWith<$Res> {
-  __$$_FormPhoneNumberChangedCopyWithImpl(_$_FormPhoneNumberChanged _value,
-      $Res Function(_$_FormPhoneNumberChanged) _then)
+class __$$_FormUsernameChangedCopyWithImpl<$Res>
+    extends _$FormEventCopyWithImpl<$Res, _$_FormUsernameChanged>
+    implements _$$_FormUsernameChangedCopyWith<$Res> {
+  __$$_FormUsernameChangedCopyWithImpl(_$_FormUsernameChanged _value,
+      $Res Function(_$_FormUsernameChanged) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phoneNumber = null,
-    Object? valid = null,
+    Object? username = null,
   }) {
-    return _then(_$_FormPhoneNumberChanged(
-      null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
+    return _then(_$_FormUsernameChanged(
+      null == username
+          ? _value.username
+          : username // ignore: cast_nullable_to_non_nullable
               as String,
-      null == valid
-          ? _value.valid
-          : valid // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
-  const _$_FormPhoneNumberChanged(this.phoneNumber, this.valid);
+class _$_FormUsernameChanged implements _FormUsernameChanged {
+  const _$_FormUsernameChanged(this.username);
 
   @override
-  final String phoneNumber;
-  @override
-  final bool valid;
+  final String username;
 
   @override
   String toString() {
-    return 'FormEvent.formPhoneNumberChanged(phoneNumber: $phoneNumber, valid: $valid)';
+    return 'FormEvent.formUsernameChanged(username: $username)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FormPhoneNumberChanged &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber) &&
-            (identical(other.valid, valid) || other.valid == valid));
+            other is _$_FormUsernameChanged &&
+            (identical(other.username, username) ||
+                other.username == username));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, phoneNumber, valid);
+  int get hashCode => Object.hash(runtimeType, username);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FormPhoneNumberChangedCopyWith<_$_FormPhoneNumberChanged> get copyWith =>
-      __$$_FormPhoneNumberChangedCopyWithImpl<_$_FormPhoneNumberChanged>(
+  _$$_FormUsernameChangedCopyWith<_$_FormUsernameChanged> get copyWith =>
+      __$$_FormUsernameChangedCopyWithImpl<_$_FormUsernameChanged>(
           this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String phoneNumber, bool valid)
-        formPhoneNumberChanged,
+    required TResult Function(String username) formUsernameChanged,
     required TResult Function(String password) formPasswordChanged,
     required TResult Function() formSubmitted,
   }) {
-    return formPhoneNumberChanged(phoneNumber, valid);
+    return formUsernameChanged(username);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String username)? formUsernameChanged,
     TResult? Function(String password)? formPasswordChanged,
     TResult? Function()? formSubmitted,
   }) {
-    return formPhoneNumberChanged?.call(phoneNumber, valid);
+    return formUsernameChanged?.call(username);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult Function(String username)? formUsernameChanged,
     TResult Function(String password)? formPasswordChanged,
     TResult Function()? formSubmitted,
     required TResult orElse(),
   }) {
-    if (formPhoneNumberChanged != null) {
-      return formPhoneNumberChanged(phoneNumber, valid);
+    if (formUsernameChanged != null) {
+      return formUsernameChanged(username);
     }
     return orElse();
   }
@@ -190,47 +179,45 @@ class _$_FormPhoneNumberChanged implements _FormPhoneNumberChanged {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_FormPhoneNumberChanged value)
-        formPhoneNumberChanged,
+    required TResult Function(_FormUsernameChanged value) formUsernameChanged,
     required TResult Function(_FormPasswordChanged value) formPasswordChanged,
     required TResult Function(_FormSubmitted value) formSubmitted,
   }) {
-    return formPhoneNumberChanged(this);
+    return formUsernameChanged(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
-    return formPhoneNumberChanged?.call(this);
+    return formUsernameChanged?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult Function(_FormSubmitted value)? formSubmitted,
     required TResult orElse(),
   }) {
-    if (formPhoneNumberChanged != null) {
-      return formPhoneNumberChanged(this);
+    if (formUsernameChanged != null) {
+      return formUsernameChanged(this);
     }
     return orElse();
   }
 }
 
-abstract class _FormPhoneNumberChanged implements FormEvent {
-  const factory _FormPhoneNumberChanged(
-      final String phoneNumber, final bool valid) = _$_FormPhoneNumberChanged;
+abstract class _FormUsernameChanged implements FormEvent {
+  const factory _FormUsernameChanged(final String username) =
+      _$_FormUsernameChanged;
 
-  String get phoneNumber;
-  bool get valid;
+  String get username;
   @JsonKey(ignore: true)
-  _$$_FormPhoneNumberChangedCopyWith<_$_FormPhoneNumberChanged> get copyWith =>
+  _$$_FormUsernameChangedCopyWith<_$_FormUsernameChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -300,8 +287,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String phoneNumber, bool valid)
-        formPhoneNumberChanged,
+    required TResult Function(String username) formUsernameChanged,
     required TResult Function(String password) formPasswordChanged,
     required TResult Function() formSubmitted,
   }) {
@@ -311,7 +297,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String username)? formUsernameChanged,
     TResult? Function(String password)? formPasswordChanged,
     TResult? Function()? formSubmitted,
   }) {
@@ -321,7 +307,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult Function(String username)? formUsernameChanged,
     TResult Function(String password)? formPasswordChanged,
     TResult Function()? formSubmitted,
     required TResult orElse(),
@@ -335,8 +321,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_FormPhoneNumberChanged value)
-        formPhoneNumberChanged,
+    required TResult Function(_FormUsernameChanged value) formUsernameChanged,
     required TResult Function(_FormPasswordChanged value) formPasswordChanged,
     required TResult Function(_FormSubmitted value) formSubmitted,
   }) {
@@ -346,7 +331,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
@@ -356,7 +341,7 @@ class _$_FormPasswordChanged implements _FormPasswordChanged {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult Function(_FormSubmitted value)? formSubmitted,
     required TResult orElse(),
@@ -416,8 +401,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String phoneNumber, bool valid)
-        formPhoneNumberChanged,
+    required TResult Function(String username) formUsernameChanged,
     required TResult Function(String password) formPasswordChanged,
     required TResult Function() formSubmitted,
   }) {
@@ -427,7 +411,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult? Function(String username)? formUsernameChanged,
     TResult? Function(String password)? formPasswordChanged,
     TResult? Function()? formSubmitted,
   }) {
@@ -437,7 +421,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String phoneNumber, bool valid)? formPhoneNumberChanged,
+    TResult Function(String username)? formUsernameChanged,
     TResult Function(String password)? formPasswordChanged,
     TResult Function()? formSubmitted,
     required TResult orElse(),
@@ -451,8 +435,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_FormPhoneNumberChanged value)
-        formPhoneNumberChanged,
+    required TResult Function(_FormUsernameChanged value) formUsernameChanged,
     required TResult Function(_FormPasswordChanged value) formPasswordChanged,
     required TResult Function(_FormSubmitted value) formSubmitted,
   }) {
@@ -462,7 +445,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult? Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult? Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult? Function(_FormSubmitted value)? formSubmitted,
   }) {
@@ -472,7 +455,7 @@ class _$_FormSubmitted implements _FormSubmitted {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_FormPhoneNumberChanged value)? formPhoneNumberChanged,
+    TResult Function(_FormUsernameChanged value)? formUsernameChanged,
     TResult Function(_FormPasswordChanged value)? formPasswordChanged,
     TResult Function(_FormSubmitted value)? formSubmitted,
     required TResult orElse(),
@@ -491,9 +474,11 @@ abstract class _FormSubmitted implements FormEvent {
 /// @nodoc
 mixin _$FormmState {
   FormzStatus get status => throw _privateConstructorUsedError;
-  PhoneNumberFieldModel get phoneNumber => throw _privateConstructorUsedError;
+  UsernameFieldModel get usernameFieldModel =>
+      throw _privateConstructorUsedError;
   AuthFailure get error => throw _privateConstructorUsedError;
-  PasswordFieldModel get password => throw _privateConstructorUsedError;
+  PasswordFieldModel get passwordFieldModel =>
+      throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $FormmStateCopyWith<FormmState> get copyWith =>
@@ -508,9 +493,9 @@ abstract class $FormmStateCopyWith<$Res> {
   @useResult
   $Res call(
       {FormzStatus status,
-      PhoneNumberFieldModel phoneNumber,
+      UsernameFieldModel usernameFieldModel,
       AuthFailure error,
-      PasswordFieldModel password});
+      PasswordFieldModel passwordFieldModel});
 
   $AuthFailureCopyWith<$Res> get error;
 }
@@ -529,26 +514,26 @@ class _$FormmStateCopyWithImpl<$Res, $Val extends FormmState>
   @override
   $Res call({
     Object? status = null,
-    Object? phoneNumber = null,
+    Object? usernameFieldModel = null,
     Object? error = null,
-    Object? password = null,
+    Object? passwordFieldModel = null,
   }) {
     return _then(_value.copyWith(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as FormzStatus,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as PhoneNumberFieldModel,
+      usernameFieldModel: null == usernameFieldModel
+          ? _value.usernameFieldModel
+          : usernameFieldModel // ignore: cast_nullable_to_non_nullable
+              as UsernameFieldModel,
       error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthFailure,
-      password: null == password
-          ? _value.password
-          : password // ignore: cast_nullable_to_non_nullable
+      passwordFieldModel: null == passwordFieldModel
+          ? _value.passwordFieldModel
+          : passwordFieldModel // ignore: cast_nullable_to_non_nullable
               as PasswordFieldModel,
     ) as $Val);
   }
@@ -572,9 +557,9 @@ abstract class _$$_FormmStateCopyWith<$Res>
   @useResult
   $Res call(
       {FormzStatus status,
-      PhoneNumberFieldModel phoneNumber,
+      UsernameFieldModel usernameFieldModel,
       AuthFailure error,
-      PasswordFieldModel password});
+      PasswordFieldModel passwordFieldModel});
 
   @override
   $AuthFailureCopyWith<$Res> get error;
@@ -592,26 +577,26 @@ class __$$_FormmStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? status = null,
-    Object? phoneNumber = null,
+    Object? usernameFieldModel = null,
     Object? error = null,
-    Object? password = null,
+    Object? passwordFieldModel = null,
   }) {
     return _then(_$_FormmState(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as FormzStatus,
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as PhoneNumberFieldModel,
+      usernameFieldModel: null == usernameFieldModel
+          ? _value.usernameFieldModel
+          : usernameFieldModel // ignore: cast_nullable_to_non_nullable
+              as UsernameFieldModel,
       error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthFailure,
-      password: null == password
-          ? _value.password
-          : password // ignore: cast_nullable_to_non_nullable
+      passwordFieldModel: null == passwordFieldModel
+          ? _value.passwordFieldModel
+          : passwordFieldModel // ignore: cast_nullable_to_non_nullable
               as PasswordFieldModel,
     ));
   }
@@ -622,22 +607,22 @@ class __$$_FormmStateCopyWithImpl<$Res>
 class _$_FormmState implements _FormmState {
   const _$_FormmState(
       {required this.status,
-      required this.phoneNumber,
+      required this.usernameFieldModel,
       required this.error,
-      required this.password});
+      required this.passwordFieldModel});
 
   @override
   final FormzStatus status;
   @override
-  final PhoneNumberFieldModel phoneNumber;
+  final UsernameFieldModel usernameFieldModel;
   @override
   final AuthFailure error;
   @override
-  final PasswordFieldModel password;
+  final PasswordFieldModel passwordFieldModel;
 
   @override
   String toString() {
-    return 'FormmState(status: $status, phoneNumber: $phoneNumber, error: $error, password: $password)';
+    return 'FormmState(status: $status, usernameFieldModel: $usernameFieldModel, error: $error, passwordFieldModel: $passwordFieldModel)';
   }
 
   @override
@@ -646,16 +631,16 @@ class _$_FormmState implements _FormmState {
         (other.runtimeType == runtimeType &&
             other is _$_FormmState &&
             (identical(other.status, status) || other.status == status) &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber) &&
+            (identical(other.usernameFieldModel, usernameFieldModel) ||
+                other.usernameFieldModel == usernameFieldModel) &&
             (identical(other.error, error) || other.error == error) &&
-            (identical(other.password, password) ||
-                other.password == password));
+            (identical(other.passwordFieldModel, passwordFieldModel) ||
+                other.passwordFieldModel == passwordFieldModel));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, status, phoneNumber, error, password);
+  int get hashCode => Object.hash(
+      runtimeType, status, usernameFieldModel, error, passwordFieldModel);
 
   @JsonKey(ignore: true)
   @override
@@ -667,18 +652,18 @@ class _$_FormmState implements _FormmState {
 abstract class _FormmState implements FormmState {
   const factory _FormmState(
       {required final FormzStatus status,
-      required final PhoneNumberFieldModel phoneNumber,
+      required final UsernameFieldModel usernameFieldModel,
       required final AuthFailure error,
-      required final PasswordFieldModel password}) = _$_FormmState;
+      required final PasswordFieldModel passwordFieldModel}) = _$_FormmState;
 
   @override
   FormzStatus get status;
   @override
-  PhoneNumberFieldModel get phoneNumber;
+  UsernameFieldModel get usernameFieldModel;
   @override
   AuthFailure get error;
   @override
-  PasswordFieldModel get password;
+  PasswordFieldModel get passwordFieldModel;
   @override
   @JsonKey(ignore: true)
   _$$_FormmStateCopyWith<_$_FormmState> get copyWith =>

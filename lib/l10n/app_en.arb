@@ -1,6 +1,16 @@
 {
-  "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+  "description": "the conventional newborn programmer greeting",
+  "phoneNumberHint": "enter your phone number",
+  "openForm": "open form",
+  "formPasswordEmpty": "password must not be empty",
+  "formPasswordInvalid": "password must be at least 8 characters long",
+  "formUsernameEmpty" : "username must not be empty",
+  "pageTitleForm": "form",
+  "formUsernameHeading": "username",
+  "formPasswordHeading": "password",
+  "formUsernameHint": "enter username",
+  "formPasswordHint": "enter password",
+  "formSubmitHint": "submit",
+  "authenticationFailure": "authentication failure",
+  "authenticationSuccess": "authentication success"
 }

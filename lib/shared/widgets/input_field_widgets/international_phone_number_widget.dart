@@ -1,7 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
+import '../../helpers/app_localizations.dart';
 import '../../shared.dart';
 
 class InternationalPhoneNumberWidget extends StatelessWidget {
@@ -28,7 +28,7 @@ class InternationalPhoneNumberWidget extends StatelessWidget {
       textFieldController: controller,
       spaceBetweenSelectorAndTextField: 10.0,
       key: formKey,
-      textStyle: Theme.of(context).textTheme.headline5,
+      textStyle: Theme.of(context).textTheme.headlineSmall,
       inputDecoration: InputDecoration(
         contentPadding: const EdgeInsets.all(10.0),
         border: OutlineInputBorder(
@@ -42,7 +42,7 @@ class InternationalPhoneNumberWidget extends StatelessWidget {
         hintStyle: Theme.of(context).textTheme.hintTextStyle,
         filled: true,
         fillColor: Colors.white,
-        hintText: 'Please enter value',
+        hintText: AppLocalizations.of(context).phoneNumberHint,
       ),
       initialValue: phoneNumber,
       onInputChanged: onInputChanged,
@@ -53,9 +53,9 @@ class InternationalPhoneNumberWidget extends StatelessWidget {
         showFlags: true,
       ),
       ignoreBlank: true,
-      autoValidateMode: AutovalidateMode.onUserInteraction,
+      autoValidateMode: AutovalidateMode.always,
       errorMessage: 'Invalid phone number',
-      selectorTextStyle: Theme.of(context).textTheme.headline5,
+      selectorTextStyle: Theme.of(context).textTheme.headlineSmall,
       keyboardAction: TextInputAction.done,
       countries: countryCodes,
     );

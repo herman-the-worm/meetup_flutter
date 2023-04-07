@@ -1,3 +1,16 @@
 {
-  "helloWorld": "¡Hola Mundo!"
+  "helloWorld": "¡hola mundo!",
+  "phoneNumberHint": "ingrese su número telefónico",
+  "openForm": "abrir formulario",
+  "formPasswordEmpty": "la contraseña no debe estar vacía",
+  "formPasswordInvalid": "la contraseña debe tener al menos 8 caracteres",
+  "formUsernameEmpty" : "el nombre de usuario no debe estar vacío",
+  "pageTitleForm": "forma",
+  "formUsernameHeading": "nombre de usuario",
+  "formPasswordHeading": "contraseña",
+  "formUsernameHint": "ingrese el nombre de usuario",
+  "formPasswordHint": "ingresar contraseña",
+  "formSubmitHint": "enviar",
+  "authenticationFailure": "fallo de autenticación",
+  "authenticationSuccess": "éxito de autenticación"
 }

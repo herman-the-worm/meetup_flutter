@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:meetup_flutter/shared/helpers/app_localizations.dart';
 
-import '../../../../../shared/shared.dart';
-import '../../../shared/bloc/form_bloc/form_bloc.dart';
+import '../../../../../../shared/shared.dart';
+import '../../../../shared/bloc/form_bloc/form_bloc.dart';
 
 class FormPasswordFieldWidget extends StatefulWidget {
   const FormPasswordFieldWidget({Key? key}) : super(key: key);
@@ -23,15 +24,15 @@ class _FormPasswordFieldWidgetState extends State<FormPasswordFieldWidget> {
     double height = MediaQuery.of(context).size.height;
 
     return BlocBuilder<FormBloc, FormmState>(
-      buildWhen: (previous, current) => previous.password != current.password,
+      buildWhen: (previous, current) =>
+          previous.passwordFieldModel != current.passwordFieldModel,
       builder: (context, state) {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TextFieldHeadingWidget(
-              key: Key('text-field-heading_widget'),
-              text: 'Password',
-            ),
+            TextFieldHeadingWidget(
+                key: Key('text-field-heading_widget'),
+                text: AppLocalizations.of(context).formPasswordHeading),
             SizedBox(height: kIsWeb ? 6 : height * 0.01),
             TextFieldWidget(
               focusNode: _focusNode,
@@ -41,7 +42,7 @@ class _FormPasswordFieldWidgetState extends State<FormPasswordFieldWidget> {
               onChanged: (value) => context
                   .read<FormBloc>()
                   .add(FormEvent.formPasswordChanged(value)),
-              hintText: 'Enter password',
+              hintText: AppLocalizations.of(context).formPasswordHint,
               border: noBorder,
               obscureText: _hidePassword,
               suffixIcon: Padding(
@@ -62,7 +63,7 @@ class _FormPasswordFieldWidgetState extends State<FormPasswordFieldWidget> {
                         ),
                 ),
               ),
-              errorText: _passwordError(state.password),
+              errorText: _passwordError(state.passwordFieldModel),
             ),
           ],
         );
@@ -75,10 +76,10 @@ class _FormPasswordFieldWidgetState extends State<FormPasswordFieldWidget> {
       return null;
     }
     if (value.error == PasswordFieldModelValidationError.empty) {
-      return 'password must not be empty';
+      return AppLocalizations.of(context).formPasswordEmpty;
     }
     if (value.error == PasswordFieldModelValidationError.complexity) {
-      return 'password does not match complexity requirements';
+      return AppLocalizations.of(context).formPasswordInvalid;
     }
     return null;
   }

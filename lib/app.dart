@@ -6,8 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart' as l;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:meetup_flutter/shared/repository/base_repository.dart';
 
+import 'shared/bloc/authentication_bloc/authentication_bloc.dart';
+import 'shared/repository/base_repository.dart';
 import 'shared/shared.dart';
 
 class AppInitialWidget extends StatelessWidget {
@@ -15,7 +16,10 @@ class AppInitialWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AppView();
+    return BlocProvider(
+      create: (_) => getIt.get<AuthenticationBloc>(),
+      child: AppView(),
+    );
   }
 }
 
@@ -29,6 +33,7 @@ class AppView extends StatefulWidget {
 class _AppViewState extends State<AppView> {
   late final String defaultLocale;
   late final Locale locale;
+  var _router;
 
   @override
   void initState() {
@@ -39,6 +44,7 @@ class _AppViewState extends State<AppView> {
     } else {
       locale = Locale(ui.window.locale.languageCode, '');
     }
+    _router = RootRouter();
   }
 
   @override
@@ -57,7 +63,7 @@ class _AppViewState extends State<AppView> {
           Locale('es', "MX"),
           Locale('en', "US"),
         ],
-        routerConfig: globalRouter,
+        routerConfig: _router.config(),
       ),
     );
   }

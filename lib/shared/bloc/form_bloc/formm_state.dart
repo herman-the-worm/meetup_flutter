@@ -4,8 +4,8 @@ part of 'form_bloc.dart';
 class FormmState with _$FormmState {
   const factory FormmState({
     required FormzStatus status,
-    required PhoneNumberFieldModel phoneNumber,
+    required UsernameFieldModel usernameFieldModel,
     required AuthFailure error,
-    required PasswordFieldModel password,
+    required PasswordFieldModel passwordFieldModel,
   }) = _FormmState;
 }

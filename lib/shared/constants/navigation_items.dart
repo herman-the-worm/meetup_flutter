@@ -1,10 +1,10 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class NavigationItem {
   final String label;
   final IconData icon;
-  final RouteBase route;
+  final PageRouteInfo route;
 
   const NavigationItem({
     required this.label,

@@ -17,30 +17,29 @@ class FormBloc extends Bloc<FormEvent, FormmState> {
     required FormRepository formRepository,
   })  : _formRepository = formRepository,
         super(const FormmState(
-          phoneNumber: PhoneNumberFieldModel.pure(false),
-          password: PasswordFieldModel.pure(),
+          usernameFieldModel: UsernameFieldModel.pure(),
+          passwordFieldModel: PasswordFieldModel.pure(),
           error: AuthFailure.unverified(),
           status: FormzStatus.pure,
         )) {
-    on<_FormPhoneNumberChanged>(_formPhoneNumberChanged);
+    on<_FormUsernameChanged>(_formUsernameChanged);
     on<_FormPasswordChanged>(_formPasswordChanged);
     on<_FormSubmitted>(_formSubmitted);
   }
 
   final FormRepository _formRepository;
 
-  Future<void> _formPhoneNumberChanged(
-    _FormPhoneNumberChanged event,
+  Future<void> _formUsernameChanged(
+    _FormUsernameChanged event,
     Emitter<FormmState> emit,
   ) async {
-    final phoneNumber =
-        PhoneNumberFieldModel.dirty(event.valid, event.phoneNumber);
+    final data = UsernameFieldModel.dirty(event.username);
     emit(
       state.copyWith(
-        phoneNumber: phoneNumber,
+        usernameFieldModel: data,
         status: Formz.validate([
-          phoneNumber,
-          state.password,
+          data,
+          state.passwordFieldModel,
         ]),
       ),
     );
@@ -50,14 +49,14 @@ class FormBloc extends Bloc<FormEvent, FormmState> {
     _FormPasswordChanged event,
     Emitter<FormmState> emit,
   ) async {
-    final password = PasswordFieldModel.dirty(event.password);
+    final data = PasswordFieldModel.dirty(event.password);
     emit(
       state.copyWith(
-        password: password,
+        passwordFieldModel: data,
         status: Formz.validate(
           [
-            state.phoneNumber,
-            password,
+            state.usernameFieldModel,
+            data,
           ],
         ),
       ),
@@ -73,8 +72,8 @@ class FormBloc extends Bloc<FormEvent, FormmState> {
         state.copyWith(status: FormzStatus.submissionInProgress),
       );
       final Either<AuthFailure, bool> result = await _formRepository.formSubmit(
-        username: state.phoneNumber.value,
-        password: state.password.value,
+        username: state.usernameFieldModel.value,
+        password: state.passwordFieldModel.value,
       );
       emit(
         result.fold(
