@@ -1,4 +1,4 @@
-Using Flutter SDK is 2.8.1 is a hard requirement for this project as of today
+Using Flutter SDK is 3.7.7 is a hard requirement for this project as of today
 
 In order to generate any code with build runner please run the following
 
